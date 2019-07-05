@@ -1,0 +1,576 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		64E39AA322CFA3F100993461 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E39AA222CFA3F100993461 /* AppDelegate.swift */; };
+		64E39AA522CFA3F100993461 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E39AA422CFA3F100993461 /* ViewController.swift */; };
+		64E39AA722CFA3F400993461 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64E39AA622CFA3F400993461 /* Assets.xcassets */; };
+		64E39AAA22CFA3F400993461 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64E39AA822CFA3F400993461 /* Main.storyboard */; };
+		64E39AB622CFA3F400993461 /* kuberTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E39AB522CFA3F400993461 /* kuberTests.swift */; };
+		64E39AC122CFA3F400993461 /* kuberUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E39AC022CFA3F400993461 /* kuberUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		64E39AB222CFA3F400993461 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 64E39A9722CFA3F100993461 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 64E39A9E22CFA3F100993461;
+			remoteInfo = kuber;
+		};
+		64E39ABD22CFA3F400993461 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 64E39A9722CFA3F100993461 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 64E39A9E22CFA3F100993461;
+			remoteInfo = kuber;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		64E39A9F22CFA3F100993461 /* kuber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kuber.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		64E39AA222CFA3F100993461 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		64E39AA422CFA3F100993461 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		64E39AA622CFA3F400993461 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		64E39AA922CFA3F400993461 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		64E39AAB22CFA3F400993461 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64E39AAC22CFA3F400993461 /* kuber.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = kuber.entitlements; sourceTree = "<group>"; };
+		64E39AB122CFA3F400993461 /* kuberTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kuberTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		64E39AB522CFA3F400993461 /* kuberTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kuberTests.swift; sourceTree = "<group>"; };
+		64E39AB722CFA3F400993461 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64E39ABC22CFA3F400993461 /* kuberUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kuberUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		64E39AC022CFA3F400993461 /* kuberUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kuberUITests.swift; sourceTree = "<group>"; };
+		64E39AC222CFA3F400993461 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		64E39A9C22CFA3F100993461 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64E39AAE22CFA3F400993461 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64E39AB922CFA3F400993461 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		64E39A9622CFA3F100993461 = {
+			isa = PBXGroup;
+			children = (
+				64E39AA122CFA3F100993461 /* kuber */,
+				64E39AB422CFA3F400993461 /* kuberTests */,
+				64E39ABF22CFA3F400993461 /* kuberUITests */,
+				64E39AA022CFA3F100993461 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		64E39AA022CFA3F100993461 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				64E39A9F22CFA3F100993461 /* kuber.app */,
+				64E39AB122CFA3F400993461 /* kuberTests.xctest */,
+				64E39ABC22CFA3F400993461 /* kuberUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		64E39AA122CFA3F100993461 /* kuber */ = {
+			isa = PBXGroup;
+			children = (
+				64E39AA222CFA3F100993461 /* AppDelegate.swift */,
+				64E39AA422CFA3F100993461 /* ViewController.swift */,
+				64E39AA622CFA3F400993461 /* Assets.xcassets */,
+				64E39AA822CFA3F400993461 /* Main.storyboard */,
+				64E39AAB22CFA3F400993461 /* Info.plist */,
+				64E39AAC22CFA3F400993461 /* kuber.entitlements */,
+			);
+			path = kuber;
+			sourceTree = "<group>";
+		};
+		64E39AB422CFA3F400993461 /* kuberTests */ = {
+			isa = PBXGroup;
+			children = (
+				64E39AB522CFA3F400993461 /* kuberTests.swift */,
+				64E39AB722CFA3F400993461 /* Info.plist */,
+			);
+			path = kuberTests;
+			sourceTree = "<group>";
+		};
+		64E39ABF22CFA3F400993461 /* kuberUITests */ = {
+			isa = PBXGroup;
+			children = (
+				64E39AC022CFA3F400993461 /* kuberUITests.swift */,
+				64E39AC222CFA3F400993461 /* Info.plist */,
+			);
+			path = kuberUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		64E39A9E22CFA3F100993461 /* kuber */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64E39AC522CFA3F400993461 /* Build configuration list for PBXNativeTarget "kuber" */;
+			buildPhases = (
+				64E39A9B22CFA3F100993461 /* Sources */,
+				64E39A9C22CFA3F100993461 /* Frameworks */,
+				64E39A9D22CFA3F100993461 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = kuber;
+			productName = kuber;
+			productReference = 64E39A9F22CFA3F100993461 /* kuber.app */;
+			productType = "com.apple.product-type.application";
+		};
+		64E39AB022CFA3F400993461 /* kuberTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64E39AC822CFA3F400993461 /* Build configuration list for PBXNativeTarget "kuberTests" */;
+			buildPhases = (
+				64E39AAD22CFA3F400993461 /* Sources */,
+				64E39AAE22CFA3F400993461 /* Frameworks */,
+				64E39AAF22CFA3F400993461 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				64E39AB322CFA3F400993461 /* PBXTargetDependency */,
+			);
+			name = kuberTests;
+			productName = kuberTests;
+			productReference = 64E39AB122CFA3F400993461 /* kuberTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		64E39ABB22CFA3F400993461 /* kuberUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64E39ACB22CFA3F400993461 /* Build configuration list for PBXNativeTarget "kuberUITests" */;
+			buildPhases = (
+				64E39AB822CFA3F400993461 /* Sources */,
+				64E39AB922CFA3F400993461 /* Frameworks */,
+				64E39ABA22CFA3F400993461 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				64E39ABE22CFA3F400993461 /* PBXTargetDependency */,
+			);
+			name = kuberUITests;
+			productName = kuberUITests;
+			productReference = 64E39ABC22CFA3F400993461 /* kuberUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		64E39A9722CFA3F100993461 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Blai Pratdesaba Pares";
+				TargetAttributes = {
+					64E39A9E22CFA3F100993461 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					64E39AB022CFA3F400993461 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 64E39A9E22CFA3F100993461;
+					};
+					64E39ABB22CFA3F400993461 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 64E39A9E22CFA3F100993461;
+					};
+				};
+			};
+			buildConfigurationList = 64E39A9A22CFA3F100993461 /* Build configuration list for PBXProject "kuber" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 64E39A9622CFA3F100993461;
+			productRefGroup = 64E39AA022CFA3F100993461 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				64E39A9E22CFA3F100993461 /* kuber */,
+				64E39AB022CFA3F400993461 /* kuberTests */,
+				64E39ABB22CFA3F400993461 /* kuberUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		64E39A9D22CFA3F100993461 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64E39AA722CFA3F400993461 /* Assets.xcassets in Resources */,
+				64E39AAA22CFA3F400993461 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64E39AAF22CFA3F400993461 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64E39ABA22CFA3F400993461 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		64E39A9B22CFA3F100993461 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64E39AA522CFA3F100993461 /* ViewController.swift in Sources */,
+				64E39AA322CFA3F100993461 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64E39AAD22CFA3F400993461 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64E39AB622CFA3F400993461 /* kuberTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64E39AB822CFA3F400993461 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64E39AC122CFA3F400993461 /* kuberUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		64E39AB322CFA3F400993461 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 64E39A9E22CFA3F100993461 /* kuber */;
+			targetProxy = 64E39AB222CFA3F400993461 /* PBXContainerItemProxy */;
+		};
+		64E39ABE22CFA3F400993461 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 64E39A9E22CFA3F100993461 /* kuber */;
+			targetProxy = 64E39ABD22CFA3F400993461 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		64E39AA822CFA3F400993461 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				64E39AA922CFA3F400993461 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		64E39AC322CFA3F400993461 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		64E39AC422CFA3F400993461 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		64E39AC622CFA3F400993461 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = kuber/kuber.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = kuber/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.blai.kuber;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		64E39AC722CFA3F400993461 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = kuber/kuber.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = kuber/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.blai.kuber;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		64E39AC922CFA3F400993461 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = kuberTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.blai.kuberTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/kuber.app/Contents/MacOS/kuber";
+			};
+			name = Debug;
+		};
+		64E39ACA22CFA3F400993461 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = kuberTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.blai.kuberTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/kuber.app/Contents/MacOS/kuber";
+			};
+			name = Release;
+		};
+		64E39ACC22CFA3F400993461 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = kuberUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.blai.kuberUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = kuber;
+			};
+			name = Debug;
+		};
+		64E39ACD22CFA3F400993461 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = kuberUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.blai.kuberUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = kuber;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		64E39A9A22CFA3F100993461 /* Build configuration list for PBXProject "kuber" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64E39AC322CFA3F400993461 /* Debug */,
+				64E39AC422CFA3F400993461 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		64E39AC522CFA3F400993461 /* Build configuration list for PBXNativeTarget "kuber" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64E39AC622CFA3F400993461 /* Debug */,
+				64E39AC722CFA3F400993461 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		64E39AC822CFA3F400993461 /* Build configuration list for PBXNativeTarget "kuberTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64E39AC922CFA3F400993461 /* Debug */,
+				64E39ACA22CFA3F400993461 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		64E39ACB22CFA3F400993461 /* Build configuration list for PBXNativeTarget "kuberUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64E39ACC22CFA3F400993461 /* Debug */,
+				64E39ACD22CFA3F400993461 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 64E39A9722CFA3F100993461 /* Project object */;
+}
