@@ -7,6 +7,7 @@
 //
 
 import Cocoa
+import AppKit
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
@@ -23,14 +24,19 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         
         kuberImage!.isTemplate = true
-        statusItem.image = kuberImage
+        statusItem.button!.image = kuberImage
         statusItem.menu = kuberMenu
+        
+        // Make the app behave as a Menu Bar extra
+        NSApp.setActivationPolicy(.accessory)
         
         let canBeUsed = KubeCtlService.checkIfKubeCtlIsInstalled();
         if (canBeUsed) {
             populateMenu()
+        } else {
+            let quit = dialogError()
+            print("QuiT!", quit)
         }
-
     }
     
     
@@ -60,6 +66,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         kuberMenu.removeAllItems()
         let contexts = KubeCtlService.getContexts()
         let currentContext = KubeCtlService.getCurrentContext();
+        let namespaces = KubeCtlService.getNamespaces();
+        let currentNamespace = KubeCtlService.getCurrentNamespace();
+        print("currentNamespace", currentNamespace)
+        
         let menuItems = contexts.map {
             (label: String) -> NSMenuItem in
             let menuItem = NSMenuItem.init(title: label, action: #selector(selectTest(_:)), keyEquivalent: "")
@@ -69,11 +79,23 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             return menuItem
         }
         
+        let menuNamespaces = namespaces.map {
+            (namespace: String) -> NSMenuItem in
+            let namespaceMenuItem = NSMenuItem.init(title: namespace, action: #selector(selectNamespace(_:)), keyEquivalent: "")
+            let selected = namespace == currentNamespace;
+            namespaceMenuItem.state = selected ? NSControl.StateValue.on : NSControl.StateValue.off;
+            
+            return namespaceMenuItem
+        }
+        
         
 
         menuItems.forEach(kuberMenu.addItem);
-        
         kuberMenu.addItem(NSMenuItem.separator())
+
+        menuNamespaces.forEach(kuberMenu.addItem)
+        kuberMenu.addItem(NSMenuItem.separator())
+
         kuberMenu.addItem(NSMenuItem.init(title: "Preferences", action: #selector(showPreferences(_:)), keyEquivalent:""))
         kuberMenu.addItem(NSMenuItem.init(title: "Quit", action: #selector(quitClicked(_:)), keyEquivalent:"Q"))
         
@@ -86,11 +108,31 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         if (sucess) {
             populateMenu()
         }
-        
     }
+    
+    @objc func selectNamespace (_ sender: NSMenuItem){
+        print("namespace!", sender.title);
+        let namespaceName = sender.title;
+        let sucess = KubeCtlService.setCurrentNamespace(namespaceName: namespaceName);
+        if (sucess) {
+            populateMenu()
+        }
+    }
+    
     
     @objc func quitClicked(_ sender: Any) {
         NSApplication.shared.terminate(self)
+    }
+    
+    func dialogError() -> Bool {
+        let alert: NSAlert = NSAlert()
+        alert.messageText = "Error"
+        alert.informativeText = "We can't locate your kubectl command. Make sure it's installed. (Searching kubectl in `\(KubeCtlService.kubeCtlPath)`)"
+        alert.alertStyle = NSAlert.Style.critical
+        alert.addButton(withTitle: "Ok")
+        
+        return alert.runModal() == .alertFirstButtonReturn
+
     }
     
     

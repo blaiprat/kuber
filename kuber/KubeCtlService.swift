@@ -13,7 +13,17 @@ import Foundation
 class KubeCtlService: NSObject {
     
     static var kubeCtlVersion: String?;
-    static let kubeCtlPath: String = "/usr/local/bin/kubectl";
+    public static let kubeCtlPath: String = "/usr/local/bin/kubectl";
+    
+    enum MyError: Error {
+        case runtimeError(String)
+    }
+    
+    
+    static func log(_ message: String) {
+        print(message)
+    }
+
     
     static func shell(arguments args: [String]) throws -> String {
         let task = Process()
@@ -33,9 +43,12 @@ class KubeCtlService: NSObject {
         let output = String(decoding: outputData, as: UTF8.self)
         let error = String(decoding: errorData, as: UTF8.self)
         task.waitUntilExit()
- 
-        
-        return(output)
+
+        if (error.isEmpty == false) {
+            throw MyError.runtimeError(error)
+        }
+
+        return(output.trimmingCharacters(in: .whitespacesAndNewlines))
     }
     
     static func getKubeCtlVersion() {
@@ -55,11 +68,11 @@ class KubeCtlService: NSObject {
                     }
                 }
             } catch let error as NSError {
-                print("Failed to load: \(error.localizedDescription)")
+                log("Failed to load: \(error.localizedDescription)")
             }
             
         } catch let error as NSError {
-            print("Failed to execute kubectl: \(error.localizedDescription)")
+            log("Failed to execute kubectl: \(error.localizedDescription)")
         }
         
         
@@ -68,20 +81,20 @@ class KubeCtlService: NSObject {
     class func checkIfKubeCtlIsInstalled() -> Bool {
         getKubeCtlVersion()
         let isValid = kubeCtlVersion != nil
-        print("isValid", isValid, kubeCtlVersion);
+
         return isValid;
     }
     
     class func getContexts() -> [String] {
         do {
             print("getContexts invoked");
-            let contextAsString = try shell(arguments: ["config", "view", "-o", "jsonpath='{.contexts[*].name}'"])
+            let contextAsString = try shell(arguments: ["config", "view", "-o", "jsonpath={.contexts[*].name}"])
             let contexts = contextAsString.components(separatedBy: " ")
-            let cleanedContext = contexts.map {$0.replacingOccurrences(of:"'" ,with:"")}
-            print(cleanedContext)
-            return cleanedContext;
+            
+            print(contexts)
+            return contexts;
         } catch let error as NSError {
-            print("Failed to execute kubectl: \(error.localizedDescription)")
+            log("Failed to execute kubectl: \(error.localizedDescription)")
             return []
         }
         
@@ -94,14 +107,14 @@ class KubeCtlService: NSObject {
             print(contextAsString)
             return contextAsString;
         } catch let error as NSError {
-            print("Failed to execute kubectl: \(error.localizedDescription)")
+            log("Failed to execute kubectl: \(error.localizedDescription)")
             return ""
         }
     }
     
     class func setCurrentContext(clusterName: String) -> Bool {
         do {
-            print("getCurrentContext invoked");
+            log("getCurrentContext invoked");
             let contextAsString = try shell(arguments: ["config", "use-context", clusterName])
 
             return true;
@@ -110,6 +123,50 @@ class KubeCtlService: NSObject {
             return false
         }
     }
+    
+    
+    class func getNamespaces() -> [String] {
+        do {
+            let namespacesAsString = try shell(arguments: ["get", "ns", "-o", "jsonpath={.items[*].metadata.name}"]);
+            let namespaces = namespacesAsString.components(separatedBy: " ")
+            log(namespaces.joined(separator:" "))
+            return namespaces
+        } catch let error as NSError {
+            print("Failed to execute kubectl: \(error.localizedDescription)")
+            return []
+        }
+    }
+    
+    class func getCurrentNamespace() -> String? {
+        do {
+            let currentContext = getCurrentContext().trimmingCharacters(in: .whitespacesAndNewlines)
+            
+            let jsonPath = "jsonpath={.contexts[?(@.name=='\(currentContext)')].context.namespace}"
+            print("jsonPath", jsonPath)
+            let namespacesAsString = try shell(arguments: ["config", "view", "-o", jsonPath])
+            
+
+            return namespacesAsString
+        } catch let error as NSError {
+            print("Failed to execute kubectl: \(error.localizedDescription)")
+            return nil
+        }
+    }
+    
+    class func setCurrentNamespace(namespaceName: String)-> Bool {
+        do {
+            let currentContext = getCurrentContext()
+            log("getCurrentContext invoked");
+            let contextAsString = try shell(arguments: ["config", "set-context", currentContext, "--namespace=\(namespaceName)"])
+            
+            return true;
+        } catch let error as NSError {
+            print("Failed to execute kubectl: \(error.localizedDescription)")
+            return false
+        }
+    }
+    
+
     
 
 }

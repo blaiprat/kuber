@@ -13,7 +13,7 @@ class ViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
  
-        let clusters = KubeCtlService.getContexts()
+//        let clusters = KubeCtlService.getContexts()
 //        print("clustes", clusterLabel)
 
 
