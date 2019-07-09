@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="6WB-il-48T">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14490.70"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Window Controller-->
+        <scene sceneID="r06-fN-CAC">
+            <objects>
+                <windowController storyboardIdentifier="Preferences" id="6WB-il-48T" customClass="PreferencesWindowController" customModule="kuber" customModuleProvider="target" sceneMemberID="viewController">
+                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="6EJ-V9-Yw9">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+                        <rect key="contentRect" x="196" y="240" width="480" height="270"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="1440" height="877"/>
+                        <connections>
+                            <outlet property="delegate" destination="6WB-il-48T" id="yff-6M-PTP"/>
+                        </connections>
+                    </window>
+                    <connections>
+                        <segue destination="n9O-3I-rB7" kind="relationship" relationship="window.shadowedContentViewController" id="XYy-HC-vvj"/>
+                    </connections>
+                </windowController>
+                <customObject id="eXC-KE-Aij" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="177" y="59"/>
+        </scene>
+        <!--Preferences View Controller-->
+        <scene sceneID="GOF-6F-J0y">
+            <objects>
+                <viewController id="n9O-3I-rB7" customClass="PreferencesViewController" customModule="kuber" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="DQd-CP-7lT">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <tabView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8OR-ts-mgK">
+                                <rect key="frame" x="6" y="2" width="469" height="254"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <font key="font" metaFont="system"/>
+                                <tabViewItems>
+                                    <tabViewItem label="Info" identifier="" image="ImageMenu" id="xYU-Aq-j8M">
+                                        <view key="view" id="Ycl-fX-IO5">
+                                            <rect key="frame" x="10" y="33" width="449" height="208"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        </view>
+                                    </tabViewItem>
+                                    <tabViewItem label="User" identifier="" image="ImageMenu" id="l7o-of-L8x">
+                                        <view key="view" ambiguous="YES" id="R9N-Ej-K7a">
+                                            <rect key="frame" x="10" y="33" width="449" height="208"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        </view>
+                                    </tabViewItem>
+                                </tabViewItems>
+                            </tabView>
+                        </subviews>
+                    </view>
+                </viewController>
+                <customObject id="OHy-05-43r" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="884" y="34"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ImageMenu" width="16" height="16"/>
+    </resources>
+</document>

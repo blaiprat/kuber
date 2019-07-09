@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		642F21DA22D3AFB6008FF643 /* PreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642F21D822D3AFB6008FF643 /* PreferencesViewController.swift */; };
+		642F21DD22D3AFE4008FF643 /* Preferences.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 642F21DC22D3AFE4008FF643 /* Preferences.storyboard */; };
+		642F21DF22D3B089008FF643 /* PreferencesWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642F21DE22D3B089008FF643 /* PreferencesWindowController.swift */; };
 		64E39AA322CFA3F100993461 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E39AA222CFA3F100993461 /* AppDelegate.swift */; };
 		64E39AA522CFA3F100993461 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E39AA422CFA3F100993461 /* ViewController.swift */; };
 		64E39AA722CFA3F400993461 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64E39AA622CFA3F400993461 /* Assets.xcassets */; };
 		64E39AAA22CFA3F400993461 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64E39AA822CFA3F400993461 /* Main.storyboard */; };
 		64E39AB622CFA3F400993461 /* kuberTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E39AB522CFA3F400993461 /* kuberTests.swift */; };
 		64E39AC122CFA3F400993461 /* kuberUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E39AC022CFA3F400993461 /* kuberUITests.swift */; };
+		64E39ACF22CFA42200993461 /* KubeCtlService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E39ACE22CFA42200993461 /* KubeCtlService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		642F21D822D3AFB6008FF643 /* PreferencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesViewController.swift; sourceTree = "<group>"; };
+		642F21DC22D3AFE4008FF643 /* Preferences.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Preferences.storyboard; sourceTree = "<group>"; };
+		642F21DE22D3B089008FF643 /* PreferencesWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesWindowController.swift; sourceTree = "<group>"; };
 		64E39A9F22CFA3F100993461 /* kuber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kuber.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64E39AA222CFA3F100993461 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		64E39AA422CFA3F100993461 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -46,6 +53,7 @@
 		64E39ABC22CFA3F400993461 /* kuberUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kuberUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		64E39AC022CFA3F400993461 /* kuberUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kuberUITests.swift; sourceTree = "<group>"; };
 		64E39AC222CFA3F400993461 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64E39ACE22CFA42200993461 /* KubeCtlService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KubeCtlService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +81,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		642F21D322D3AF46008FF643 /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				642F21D822D3AFB6008FF643 /* PreferencesViewController.swift */,
+				642F21DC22D3AFE4008FF643 /* Preferences.storyboard */,
+				642F21DE22D3B089008FF643 /* PreferencesWindowController.swift */,
+			);
+			path = Preferences;
+			sourceTree = "<group>";
+		};
 		64E39A9622CFA3F100993461 = {
 			isa = PBXGroup;
 			children = (
@@ -96,12 +114,14 @@
 		64E39AA122CFA3F100993461 /* kuber */ = {
 			isa = PBXGroup;
 			children = (
+				642F21D322D3AF46008FF643 /* Preferences */,
 				64E39AA222CFA3F100993461 /* AppDelegate.swift */,
 				64E39AA422CFA3F100993461 /* ViewController.swift */,
 				64E39AA622CFA3F400993461 /* Assets.xcassets */,
 				64E39AA822CFA3F400993461 /* Main.storyboard */,
 				64E39AAB22CFA3F400993461 /* Info.plist */,
 				64E39AAC22CFA3F400993461 /* kuber.entitlements */,
+				64E39ACE22CFA42200993461 /* KubeCtlService.swift */,
 			);
 			path = kuber;
 			sourceTree = "<group>";
@@ -192,6 +212,11 @@
 				TargetAttributes = {
 					64E39A9E22CFA3F100993461 = {
 						CreatedOnToolsVersion = 10.2.1;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
 					};
 					64E39AB022CFA3F400993461 = {
 						CreatedOnToolsVersion = 10.2.1;
@@ -230,6 +255,7 @@
 			files = (
 				64E39AA722CFA3F400993461 /* Assets.xcassets in Resources */,
 				64E39AAA22CFA3F400993461 /* Main.storyboard in Resources */,
+				642F21DD22D3AFE4008FF643 /* Preferences.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,7 +281,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				64E39AA522CFA3F100993461 /* ViewController.swift in Sources */,
+				64E39ACF22CFA42200993461 /* KubeCtlService.swift in Sources */,
+				642F21DF22D3B089008FF643 /* PreferencesWindowController.swift in Sources */,
 				64E39AA322CFA3F100993461 /* AppDelegate.swift in Sources */,
+				642F21DA22D3AFB6008FF643 /* PreferencesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,7 +450,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = kuber/kuber.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = kuber/Info.plist;
@@ -439,7 +467,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = kuber/kuber.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = kuber/Info.plist;

@@ -9,9 +9,13 @@
 import Cocoa
 
 class ViewController: NSViewController {
-
+        
     override func viewDidLoad() {
         super.viewDidLoad()
+ 
+        let clusters = KubeCtlService.getContexts()
+//        print("clustes", clusterLabel)
+
 
         // Do any additional setup after loading the view.
     }
@@ -21,7 +25,5 @@ class ViewController: NSViewController {
         // Update the view, if already loaded.
         }
     }
-
-
 }
 
