@@ -68,7 +68,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         let currentContext = KubeCtlService.getCurrentContext();
         let namespaces = KubeCtlService.getNamespaces();
         let currentNamespace = KubeCtlService.getCurrentNamespace();
-        print("currentNamespace", currentNamespace)
+
         
         let menuItems = contexts.map {
             (label: String) -> NSMenuItem in

@@ -7,7 +7,25 @@
 		<key>kuber.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>5</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>64E39A9E22CFA3F100993461</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>64E39AB022CFA3F400993461</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>64E39ABB22CFA3F400993461</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

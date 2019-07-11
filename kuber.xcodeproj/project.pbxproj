@@ -3,20 +3,22 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		524BCEDFF1273791CADBE4B5 /* Pods_kuberTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A0E3C2A2EB6F71C43786DCC /* Pods_kuberTests.framework */; };
 		642F21DA22D3AFB6008FF643 /* PreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642F21D822D3AFB6008FF643 /* PreferencesViewController.swift */; };
 		642F21DD22D3AFE4008FF643 /* Preferences.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 642F21DC22D3AFE4008FF643 /* Preferences.storyboard */; };
 		642F21DF22D3B089008FF643 /* PreferencesWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642F21DE22D3B089008FF643 /* PreferencesWindowController.swift */; };
+		6458140DBDFA6CA1597EC783 /* Pods_kuberUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C25845495BDC62590477BEFF /* Pods_kuberUITests.framework */; };
 		64E39AA322CFA3F100993461 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E39AA222CFA3F100993461 /* AppDelegate.swift */; };
-		64E39AA522CFA3F100993461 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E39AA422CFA3F100993461 /* ViewController.swift */; };
 		64E39AA722CFA3F400993461 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64E39AA622CFA3F400993461 /* Assets.xcassets */; };
 		64E39AAA22CFA3F400993461 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64E39AA822CFA3F400993461 /* Main.storyboard */; };
 		64E39AB622CFA3F400993461 /* kuberTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E39AB522CFA3F400993461 /* kuberTests.swift */; };
 		64E39AC122CFA3F400993461 /* kuberUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E39AC022CFA3F400993461 /* kuberUITests.swift */; };
 		64E39ACF22CFA42200993461 /* KubeCtlService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E39ACE22CFA42200993461 /* KubeCtlService.swift */; };
+		F9779DC7589B29F8C3CB9F94 /* Pods_kuber.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36E90CAE351F3A0DA84BD07E /* Pods_kuber.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,12 +39,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		36E90CAE351F3A0DA84BD07E /* Pods_kuber.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kuber.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		642F21D822D3AFB6008FF643 /* PreferencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesViewController.swift; sourceTree = "<group>"; };
 		642F21DC22D3AFE4008FF643 /* Preferences.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Preferences.storyboard; sourceTree = "<group>"; };
 		642F21DE22D3B089008FF643 /* PreferencesWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesWindowController.swift; sourceTree = "<group>"; };
+		64E296C322D4FEA200336E16 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
 		64E39A9F22CFA3F100993461 /* kuber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kuber.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64E39AA222CFA3F100993461 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		64E39AA422CFA3F100993461 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		64E39AA622CFA3F400993461 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		64E39AA922CFA3F400993461 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		64E39AAB22CFA3F400993461 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -54,6 +57,14 @@
 		64E39AC022CFA3F400993461 /* kuberUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kuberUITests.swift; sourceTree = "<group>"; };
 		64E39AC222CFA3F400993461 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		64E39ACE22CFA42200993461 /* KubeCtlService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KubeCtlService.swift; sourceTree = "<group>"; };
+		673DE68ABABCE59B29140080 /* Pods-kuberUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kuberUITests.release.xcconfig"; path = "Target Support Files/Pods-kuberUITests/Pods-kuberUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6A0E3C2A2EB6F71C43786DCC /* Pods_kuberTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kuberTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		753A57839CAC756CFA02F442 /* Pods-kuberTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kuberTests.debug.xcconfig"; path = "Target Support Files/Pods-kuberTests/Pods-kuberTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B920E486A7FC1C03AC87394E /* Pods-kuberUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kuberUITests.debug.xcconfig"; path = "Target Support Files/Pods-kuberUITests/Pods-kuberUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C25845495BDC62590477BEFF /* Pods_kuberUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kuberUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1EAB42DFCA47EEF0D81A51C /* Pods-kuberTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kuberTests.release.xcconfig"; path = "Target Support Files/Pods-kuberTests/Pods-kuberTests.release.xcconfig"; sourceTree = "<group>"; };
+		E741C32F348E5F86D0252BC5 /* Pods-kuber.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kuber.release.xcconfig"; path = "Target Support Files/Pods-kuber/Pods-kuber.release.xcconfig"; sourceTree = "<group>"; };
+		F7851F57B8C99BC35A427000 /* Pods-kuber.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kuber.debug.xcconfig"; path = "Target Support Files/Pods-kuber/Pods-kuber.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9779DC7589B29F8C3CB9F94 /* Pods_kuber.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				524BCEDFF1273791CADBE4B5 /* Pods_kuberTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6458140DBDFA6CA1597EC783 /* Pods_kuberUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +112,8 @@
 				64E39AB422CFA3F400993461 /* kuberTests */,
 				64E39ABF22CFA3F400993461 /* kuberUITests */,
 				64E39AA022CFA3F100993461 /* Products */,
+				6AC8F28770961EBA30A18BF0 /* Pods */,
+				8A3DE05A4B55938B520B1FE7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -114,9 +130,9 @@
 		64E39AA122CFA3F100993461 /* kuber */ = {
 			isa = PBXGroup;
 			children = (
+				64E296C322D4FEA200336E16 /* Podfile */,
 				642F21D322D3AF46008FF643 /* Preferences */,
 				64E39AA222CFA3F100993461 /* AppDelegate.swift */,
-				64E39AA422CFA3F100993461 /* ViewController.swift */,
 				64E39AA622CFA3F400993461 /* Assets.xcassets */,
 				64E39AA822CFA3F400993461 /* Main.storyboard */,
 				64E39AAB22CFA3F400993461 /* Info.plist */,
@@ -144,6 +160,29 @@
 			path = kuberUITests;
 			sourceTree = "<group>";
 		};
+		6AC8F28770961EBA30A18BF0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F7851F57B8C99BC35A427000 /* Pods-kuber.debug.xcconfig */,
+				E741C32F348E5F86D0252BC5 /* Pods-kuber.release.xcconfig */,
+				753A57839CAC756CFA02F442 /* Pods-kuberTests.debug.xcconfig */,
+				D1EAB42DFCA47EEF0D81A51C /* Pods-kuberTests.release.xcconfig */,
+				B920E486A7FC1C03AC87394E /* Pods-kuberUITests.debug.xcconfig */,
+				673DE68ABABCE59B29140080 /* Pods-kuberUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8A3DE05A4B55938B520B1FE7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				36E90CAE351F3A0DA84BD07E /* Pods_kuber.framework */,
+				6A0E3C2A2EB6F71C43786DCC /* Pods_kuberTests.framework */,
+				C25845495BDC62590477BEFF /* Pods_kuberUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -151,9 +190,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 64E39AC522CFA3F400993461 /* Build configuration list for PBXNativeTarget "kuber" */;
 			buildPhases = (
+				9B22D00789792F9A23BE4BDC /* [CP] Check Pods Manifest.lock */,
 				64E39A9B22CFA3F100993461 /* Sources */,
 				64E39A9C22CFA3F100993461 /* Frameworks */,
 				64E39A9D22CFA3F100993461 /* Resources */,
+				7461618DE102C1AC661C4DC1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -168,6 +209,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 64E39AC822CFA3F400993461 /* Build configuration list for PBXNativeTarget "kuberTests" */;
 			buildPhases = (
+				F9725226488E373CCDA73509 /* [CP] Check Pods Manifest.lock */,
 				64E39AAD22CFA3F400993461 /* Sources */,
 				64E39AAE22CFA3F400993461 /* Frameworks */,
 				64E39AAF22CFA3F400993461 /* Resources */,
@@ -186,6 +228,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 64E39ACB22CFA3F400993461 /* Build configuration list for PBXNativeTarget "kuberUITests" */;
 			buildPhases = (
+				D38254EE597E8D63E61DA756 /* [CP] Check Pods Manifest.lock */,
 				64E39AB822CFA3F400993461 /* Sources */,
 				64E39AB922CFA3F400993461 /* Frameworks */,
 				64E39ABA22CFA3F400993461 /* Resources */,
@@ -275,12 +318,97 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7461618DE102C1AC661C4DC1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-kuber/Pods-kuber-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-kuber/Pods-kuber-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-kuber/Pods-kuber-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9B22D00789792F9A23BE4BDC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-kuber-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D38254EE597E8D63E61DA756 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-kuberUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9725226488E373CCDA73509 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-kuberTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		64E39A9B22CFA3F100993461 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				64E39AA522CFA3F100993461 /* ViewController.swift in Sources */,
 				64E39ACF22CFA42200993461 /* KubeCtlService.swift in Sources */,
 				642F21DF22D3B089008FF643 /* PreferencesWindowController.swift in Sources */,
 				64E39AA322CFA3F100993461 /* AppDelegate.swift in Sources */,
@@ -448,6 +576,7 @@
 		};
 		64E39AC622CFA3F400993461 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7851F57B8C99BC35A427000 /* Pods-kuber.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -457,6 +586,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = io.blai.kuber;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -465,6 +595,7 @@
 		};
 		64E39AC722CFA3F400993461 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E741C32F348E5F86D0252BC5 /* Pods-kuber.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -474,6 +605,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = io.blai.kuber;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -482,6 +614,7 @@
 		};
 		64E39AC922CFA3F400993461 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 753A57839CAC756CFA02F442 /* Pods-kuberTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -493,6 +626,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = io.blai.kuberTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -502,6 +636,7 @@
 		};
 		64E39ACA22CFA3F400993461 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1EAB42DFCA47EEF0D81A51C /* Pods-kuberTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -513,6 +648,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = io.blai.kuberTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -522,6 +658,7 @@
 		};
 		64E39ACC22CFA3F400993461 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B920E486A7FC1C03AC87394E /* Pods-kuberUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -532,6 +669,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = io.blai.kuberUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -541,6 +679,7 @@
 		};
 		64E39ACD22CFA3F400993461 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 673DE68ABABCE59B29140080 /* Pods-kuberUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -551,6 +690,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = io.blai.kuberUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

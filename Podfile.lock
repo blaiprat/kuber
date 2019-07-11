@@ -1,0 +1,20 @@
+PODS:
+  - PathKit (1.0.0)
+  - Shell (2.1.2):
+    - PathKit (= 1.0.0)
+
+DEPENDENCIES:
+  - Shell (= 2.1.2)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - PathKit
+    - Shell
+
+SPEC CHECKSUMS:
+  PathKit: 364e0de7fb5adb142aecab4e112187e5548fc4b6
+  Shell: bfa32b9100a9968d3c88ea32a8151d8a6cefc868
+
+PODFILE CHECKSUM: 355b2d496d79bb6f23eb7d67cda3471236b8becd
+
+COCOAPODS: 1.7.3
