@@ -42,7 +42,7 @@ class KubeCtlService: NSObject {
 
     }
     
-    static func getKubeCtlVersion() {
+    static func getKubeCtlVersion() throws -> String {
 
         do {
             let version = try shell(arguments: ["version", "--client", "-o", "json"]);
@@ -55,25 +55,35 @@ class KubeCtlService: NSObject {
                     // try to read out a string array
                     if let entry = json["clientVersion"] as? [String:String] {
                         kubeCtlVersion = entry["gitVersion"]
-                        
-                    }
+                        print("kubeCtlVersion", kubeCtlVersion!)
+                        return entry["gitVersion"]!
+                    } 
                 }
             } catch let error as NSError {
+                
                 log("Failed to load: \(error.localizedDescription)")
+                throw error
             }
             
         } catch let error as NSError {
             log("Failed to execute kubectl: \(error.localizedDescription)")
+            throw error
         }
         
         
+        throw MyError.runtimeError("Could not get version")
+
     }
     
     static func checkIfKubeCtlIsInstalled() -> Bool {
-        getKubeCtlVersion()
-        let isValid = kubeCtlVersion != nil
+         do {
+            kubeCtlVersion = try getKubeCtlVersion()
+            let isValid = kubeCtlVersion != nil
 
-        return isValid;
+            return isValid
+         } catch {
+            return false
+        }
     }
     
     static func getContexts() -> [String] {

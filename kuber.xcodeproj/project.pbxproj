@@ -12,6 +12,7 @@
 		642F21DD22D3AFE4008FF643 /* Preferences.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 642F21DC22D3AFE4008FF643 /* Preferences.storyboard */; };
 		642F21DF22D3B089008FF643 /* PreferencesWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642F21DE22D3B089008FF643 /* PreferencesWindowController.swift */; };
 		6458140DBDFA6CA1597EC783 /* Pods_kuberUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C25845495BDC62590477BEFF /* Pods_kuberUITests.framework */; };
+		64CED33422D76C4700823BDB /* CustomClusterNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64CED33322D76C4700823BDB /* CustomClusterNames.swift */; };
 		64E39AA322CFA3F100993461 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E39AA222CFA3F100993461 /* AppDelegate.swift */; };
 		64E39AA722CFA3F400993461 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64E39AA622CFA3F400993461 /* Assets.xcassets */; };
 		64E39AAA22CFA3F400993461 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64E39AA822CFA3F400993461 /* Main.storyboard */; };
@@ -43,8 +44,9 @@
 		642F21D822D3AFB6008FF643 /* PreferencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesViewController.swift; sourceTree = "<group>"; };
 		642F21DC22D3AFE4008FF643 /* Preferences.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Preferences.storyboard; sourceTree = "<group>"; };
 		642F21DE22D3B089008FF643 /* PreferencesWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesWindowController.swift; sourceTree = "<group>"; };
+		64CED33322D76C4700823BDB /* CustomClusterNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomClusterNames.swift; sourceTree = "<group>"; };
 		64E296C322D4FEA200336E16 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
-		64E39A9F22CFA3F100993461 /* kuber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kuber.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		64E39A9F22CFA3F100993461 /* Kuber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kuber.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64E39AA222CFA3F100993461 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		64E39AA622CFA3F400993461 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		64E39AA922CFA3F400993461 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -105,6 +107,15 @@
 			path = Preferences;
 			sourceTree = "<group>";
 		};
+		64CED33222D76C1600823BDB /* services */ = {
+			isa = PBXGroup;
+			children = (
+				64E39ACE22CFA42200993461 /* KubeCtlService.swift */,
+				64CED33322D76C4700823BDB /* CustomClusterNames.swift */,
+			);
+			path = services;
+			sourceTree = "<group>";
+		};
 		64E39A9622CFA3F100993461 = {
 			isa = PBXGroup;
 			children = (
@@ -120,7 +131,7 @@
 		64E39AA022CFA3F100993461 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				64E39A9F22CFA3F100993461 /* kuber.app */,
+				64E39A9F22CFA3F100993461 /* Kuber.app */,
 				64E39AB122CFA3F400993461 /* kuberTests.xctest */,
 				64E39ABC22CFA3F400993461 /* kuberUITests.xctest */,
 			);
@@ -130,6 +141,7 @@
 		64E39AA122CFA3F100993461 /* kuber */ = {
 			isa = PBXGroup;
 			children = (
+				64CED33222D76C1600823BDB /* services */,
 				64E296C322D4FEA200336E16 /* Podfile */,
 				642F21D322D3AF46008FF643 /* Preferences */,
 				64E39AA222CFA3F100993461 /* AppDelegate.swift */,
@@ -137,7 +149,6 @@
 				64E39AA822CFA3F400993461 /* Main.storyboard */,
 				64E39AAB22CFA3F400993461 /* Info.plist */,
 				64E39AAC22CFA3F400993461 /* kuber.entitlements */,
-				64E39ACE22CFA42200993461 /* KubeCtlService.swift */,
 			);
 			path = kuber;
 			sourceTree = "<group>";
@@ -186,9 +197,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		64E39A9E22CFA3F100993461 /* kuber */ = {
+		64E39A9E22CFA3F100993461 /* Kuber */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 64E39AC522CFA3F400993461 /* Build configuration list for PBXNativeTarget "kuber" */;
+			buildConfigurationList = 64E39AC522CFA3F400993461 /* Build configuration list for PBXNativeTarget "Kuber" */;
 			buildPhases = (
 				9B22D00789792F9A23BE4BDC /* [CP] Check Pods Manifest.lock */,
 				64E39A9B22CFA3F100993461 /* Sources */,
@@ -200,9 +211,9 @@
 			);
 			dependencies = (
 			);
-			name = kuber;
+			name = Kuber;
 			productName = kuber;
-			productReference = 64E39A9F22CFA3F100993461 /* kuber.app */;
+			productReference = 64E39A9F22CFA3F100993461 /* Kuber.app */;
 			productType = "com.apple.product-type.application";
 		};
 		64E39AB022CFA3F400993461 /* kuberTests */ = {
@@ -284,7 +295,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				64E39A9E22CFA3F100993461 /* kuber */,
+				64E39A9E22CFA3F100993461 /* Kuber */,
 				64E39AB022CFA3F400993461 /* kuberTests */,
 				64E39ABB22CFA3F400993461 /* kuberUITests */,
 			);
@@ -412,6 +423,7 @@
 				64E39ACF22CFA42200993461 /* KubeCtlService.swift in Sources */,
 				642F21DF22D3B089008FF643 /* PreferencesWindowController.swift in Sources */,
 				64E39AA322CFA3F100993461 /* AppDelegate.swift in Sources */,
+				64CED33422D76C4700823BDB /* CustomClusterNames.swift in Sources */,
 				642F21DA22D3AFB6008FF643 /* PreferencesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -437,12 +449,12 @@
 /* Begin PBXTargetDependency section */
 		64E39AB322CFA3F400993461 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 64E39A9E22CFA3F100993461 /* kuber */;
+			target = 64E39A9E22CFA3F100993461 /* Kuber */;
 			targetProxy = 64E39AB222CFA3F400993461 /* PBXContainerItemProxy */;
 		};
 		64E39ABE22CFA3F400993461 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 64E39A9E22CFA3F100993461 /* kuber */;
+			target = 64E39A9E22CFA3F100993461 /* Kuber */;
 			targetProxy = 64E39ABD22CFA3F400993461 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -710,7 +722,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		64E39AC522CFA3F400993461 /* Build configuration list for PBXNativeTarget "kuber" */ = {
+		64E39AC522CFA3F400993461 /* Build configuration list for PBXNativeTarget "Kuber" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				64E39AC622CFA3F400993461 /* Debug */,
